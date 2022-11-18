@@ -111,6 +111,8 @@ img{
     padding: 1.5rem 3.1rem 1.6rem 3.1rem;
     background-color: var(--dark-cyan);
     transition: all .3s ease;
+    border-color: transparent;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -127,14 +129,14 @@ img{
 .site-header {
     padding-top: 4.4rem;
     padding-bottom: 4.4rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
 }
 
 .site-header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .site-header__link{
@@ -195,15 +197,18 @@ img{
 }
 
 .hero__container {
-    background-image: url(../img/bitmap.jpg);
+    background-image: url(../img/bitmap.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     height: 600px;
     background-color: var(--grey);
     padding-top: 11.7rem;
     padding-left: 8.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero__info-wrapper {
@@ -398,6 +403,169 @@ img{
 }
 
 
+/* HOW-IT-WORKS */
+.how-it-works {
+    padding: 0;
+    margin: 0;
+}
+
+.how-it-works__inner {
+    width: 100%;
+    max-width: 1045px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.how-it-works__inner--title {
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: var(--grey);
+    margin-top: 0;
+    margin-bottom: 8rem;
+}
+
+.how-it-works__list {
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 6.4rem;
+    list-style: none;
+    counter-reset: how-it-works;
+}
+
+.how-it-works__item {
+    display: flex;
+    flex-direction: column;
+    counter-increment: how-it-works;
+    width: 100%;
+    max-width: 285px;
+}
+
+.how-it-works__item::before{
+    position: absolute;
+    z-index: 2;
+    width: 31px;
+    height: 31px;
+    border: 2px solid var(--dark-cyan);
+    border-radius: 50%;
+    background-color: var(--light-cream-bg);
+    content: "";
+}
+
+.how-it-works__item:not(:last-child):after{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 730px;
+    height: 1px;
+    background-color: var(--pale-orange);
+    content: "";
+}
+
+.how-it-works__item:not(:last-child) {
+    margin-right: 9.5rem;
+}
+
+.how-it-works__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    background-color: var(--light-bg);
+}
+
+.how-it-works__info::before {
+    align-self: flex-start;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+    margin-bottom: 3.8rem;
+    margin-top: 6.7rem;
+    color: var(--pale-orange);
+    content: "0" counter(how-it-works);
+}
+
+.how-it-works__step-title {
+    margin-top: 0;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: var(--title-color);
+}
+
+.how-it-works__step-text {
+    margin: 0;
+    line-height: 26px;
+    color: #333;
+}
+
+
+/* SITE-FOOTER */
+.site-footer-wrapper {
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.footer {
+    padding: 4.7rem 8.5rem;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer__list {
+    margin-right: 10.4rem;
+}
+
+.footer__link:hover {
+    color: var(--text-color);
+}
+
+.footer__social-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__social-items {
+    display: flex;
+    margin-right: 2.4rem;
+}
+
+.footer__social-networks-link {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer__social-networks-link:hover {
+    background-color: var(--pale-orange);
+}
+
+.footer__social-networks-img {
+    width: 24px;
+    height: 24px;
+}
+
+
+
 
 
 
@@ -410,11 +578,15 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .hero__container {
-        background-image: url(../img/bitmap2x.jpg);
+        background-image: url(../img/bitmap@2x.png);
     }
 
     .indext-features-inner {
         background-image: url(../img/bitmap-bg@2x.png);
+    }
+
+    .site-footer-wrapper {
+        background-image: url(../img/footer-bg@2x.png);
     }
 
 }
