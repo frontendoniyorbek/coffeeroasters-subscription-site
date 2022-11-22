@@ -68,6 +68,7 @@ img{
 }
 
 .hero__info-wrapper--about {
+    padding-left: 6.5rem;
     max-width: 493px;
 }
 
@@ -127,11 +128,13 @@ img{
 }
 
 .uncompromising-quality-inner {
+    background-color: var(--title-color);
     background-image: url(../img/quality-bg.png);
     background-repeat: no-repeat;
     background-size: 1280px 474px;
     width: 100%;
     max-width: 1280px;
+    border-radius: 10px;
 }
 
 .uncompromising-quality-inner {
@@ -281,16 +284,23 @@ only screen and (                min-resolution: 2dppx) {
         background-image: url(../img/bitmap-hero-bg@2x.png);
     }
 
-    .indext-features-inner {
-        background-image: url(../img/bitmap-bg@2x.png);
-    }
-
-    .site-footer-wrapper {
-        background-image: url(../img/footer-bg@2x.png);
-    }
-
     .uncompromising-quality-inner {
         background-image: url(../img/quality-bg@2x.png);
+    }
+
+    .our-headquarters__item::before {
+        background-image: url(../img/canada-img@2x.png);
+        content: "";
+    }
+
+    .our-headquarters__item:nth-child(2):before {
+        background-image: url(../img/united-kingdom@2x.png);
+        content: "";
+    }
+
+    .our-headquarters__item:nth-child(3):before {
+        background-image: url(../img/australis-img@2x.png);
+        content: "";
     }
 
 }
