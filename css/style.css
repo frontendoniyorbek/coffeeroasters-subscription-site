@@ -518,6 +518,21 @@ img{
     padding: 0;
 }
 
+.logo-link-outline:focus {
+    outline: 2px dashed var(--light-cream-bg);
+    outline-offset:3px;
+}
+
+.footer__link:focus {
+    outline: 2px dashed var(--light-cream-bg);
+    outline-offset:3px ;
+}
+
+.footer__social-networks-link:focus {
+    outline: 2px dashed var(--light-cream-bg);
+    outline-offset:3px ;
+}
+
 .footer__container {
     width: 100%;
     max-width: 1280px;
