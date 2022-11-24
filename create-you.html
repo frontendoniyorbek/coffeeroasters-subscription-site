@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeeroasters-subscription-site</title>
+
+    <!-- NORMALIZE CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- STYLE.CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="site-header__container container">
+            <a class="logo-link" href="#">
+                <img class="logo-img" src="./img/coffeeroasters-logo.svg" alt="coffeeroasters-subscription-site"
+                    width="236" height="26">
+            </a>
+
+            <!-- SITENAV -->
+            <nav class="sitenav">
+                <ul class="sitenav__list">
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="index.html">HOME</a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="create-plan.html">Create your plan</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero__container hero__create--page container">
+            <div class="hero__info-wrapper">
+                <h2 class="hero__content-heading">Great coffee
+                    made simple.
+                </h2>
+                <p class="hero__content-text">Start your mornings with the world’s best coffees. Try our expertly
+                    curated artisan coffees from our best roasters delivered directly to your door, at your
+                    schedule.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <!-- HOW-IT-WORKS -->
+        <section class="how-it-works">
+            <div class="how-it-works__container container">
+                <div class="how-it-works__inner how-it-works__inner-create-page">
+                    <ol class="how-it-works__list">
+                        <li class="how-it-works__item">
+                            <div class="how-it-works__info">
+                                <h3 class="how-it-works__step-title how-it-works__step-h3">Pick your coffee</h3>
+                                <p class="how-it-works__step-text how-it-works__step-p">Select from our evolving range
+                                    of artisan coffees.
+                                    Our beans are ethically sourced and we pay fair prices for them. There are new
+                                    coffees in all profiles every month for you to try out.</p>
+                            </div>
+                        </li>
+
+                        <li class="how-it-works__item">
+                            <div class="how-it-works__info">
+                                <h3 class="how-it-works__step-title how-it-works__step-h3">Choose the frequency</h3>
+                                <p class="how-it-works__step-text how-it-works__step-p">Customize your order frequency,
+                                    quantity, even your
+                                    roast style and grind type. Pause, skip or cancel your subscription with no
+                                    commitment through our online portal.</p>
+                            </div>
+                        </li>
+
+                        <li class="how-it-works__item">
+                            <div class="how-it-works__info">
+                                <h3 class="how-it-works__step-title how-it-works__step-h3">Receive and enjoy!</h3>
+                                <p class="how-it-works__step-text how-it-works__step-p">We ship your package within 48
+                                    hours, freshly
+                                    roasted. Sit back and enjoy award-winning world-class coffees curated to provide a
+                                    distinct tasting experience.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section class="menu">
+            <div class="container">
+                <div class="menu-wrapper">
+                    <!-- MENU-TYPES -->
+                    <div class="menu-types-wrapper">
+                        <div class="menu-types">
+                            <a href="#" class="menu-types-link">01 Preferences</a>
+                            <a href="#" class="menu-types-link">02 Bean Type</a>
+                            <a href="#" class="menu-types-link">03 Quantity</a>
+                            <a href="#" class="menu-types-link">04 Grind Option</a>
+                            <a href="#" class="menu-types-link">05 Deliveries</a>
+                        </div>
+                    </div>
+
+                    <!-- PREFERENTIAL-QUIZES -->
+                    <form class="preferential-quizes-form preferential-quizes" action="https://echo.htmlacademy.ru"
+                        method="POST">
+                        <div class="preferential-quizes__top">
+                            <h2 class="preferential-quizes__heading">How do you drink your coffee?</h2>
+                            <button class="drop-down" type="button">
+                                <img class="drop-down__img" src="./img/button-img.svg" alt="drop-down-button">
+                            </button>
+                        </div>
+                        <div class="preferential-quizes__list">
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">Capsule</h3>
+                                    <p class="preferential-quizes__content-text">Compatible with Nespresso systems and
+                                        similar brewers</p>
+                                </span>
+                            </label>
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">Filter</h3>
+                                    <p class="preferential-quizes__content-text">For pour over or drip methods like
+                                        Aeropress, Chemex, and V60</p>
+                                </span>
+                            </label>
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">Espresso</h3>
+                                    <p class="preferential-quizes__content-text">Dense and finely ground beans for an
+                                        intense, flavorful experience</p>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="preferential-quizes__top">
+                            <h2 class="preferential-quizes__heading">What type of coffee?</h2>
+                            <button class="drop-down" type="button">
+                                <img class="drop-down__img" src="./img/button-img.svg" alt="drop-down-button">
+                            </button>
+                        </div>
+                        <div class="preferential-quizes__list">
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">Single Origin</h3>
+                                    <p class="preferential-quizes__content-text">Distinct, high quality coffee from a
+                                        specific family-owned farm</p>
+                                </span>
+                            </label>
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">Decaf</h3>
+                                    <p class="preferential-quizes__content-text">Just like regular coffee, except the
+                                        caffeine has been removed</p>
+                                </span>
+                            </label>
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">Blended</h3>
+                                    <p class="preferential-quizes__content-text">Combination of two or three dark
+                                        roasted beans of organic coffees</p>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="preferential-quizes__top">
+                            <h2 class="preferential-quizes__heading">How much would you like?</h2>
+                            <button class="drop-down" type="button">
+                                <img class="drop-down__img" src="./img/button-img.svg" alt="drop-down-button">
+                            </button>
+                        </div>
+                        <div class="preferential-quizes__list">
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">250g</h3>
+                                    <p class="preferential-quizes__content-text">Perfect for the solo drinker. Yields
+                                        about 12 delicious cups.</p>
+                                </span>
+                            </label>
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">500g</h3>
+                                    <p class="preferential-quizes__content-text">Perfect option for a couple. Yields
+                                        about 40 delectable cups.</p>
+                                </span>
+                            </label>
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">1000g</h3>
+                                    <p class="preferential-quizes__content-text">Perfect for offices and events. Yields
+                                        about 90 delightful cups.</p>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="preferential-quizes__top">
+                            <h2 class="preferential-quizes__heading">Want us to grind them?</h2>
+                            <button class="drop-down" type="button">
+                                <img class="drop-down__img" src="./img/button-img.svg" alt="drop-down-button">
+                            </button>
+                        </div>
+                        <div class="preferential-quizes__list">
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">Wholebean</h3>
+                                    <p class="preferential-quizes__content-text">Best choice if you cherish the full
+                                        sensory experience</p>
+                                </span>
+                            </label>
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">Filter</h3>
+                                    <p class="preferential-quizes__content-text">For drip or pour-over coffee methods
+                                        such as V60 or Aeropress</p>
+                                </span>
+                            </label>
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">Cafetiére</h3>
+                                    <p class="preferential-quizes__content-text">Course ground beans specially suited
+                                        for french press coffee</p>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="preferential-quizes__top">
+                            <h2 class="preferential-quizes__heading">How often should we deliver?</h2>
+                            <button class="drop-down" type="button">
+                                <img class="drop-down__img" src="./img/button-img.svg" alt="drop-down-button">
+                            </button>
+                        </div>
+                        <div class="preferential-quizes__list">
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">Every week</h3>
+                                    <p class="preferential-quizes__content-text">$7.20 per shipment. Includes free
+                                        first-class shipping.</p>
+                                </span>
+                            </label>
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">Every 2 weeks</h3>
+                                    <p class="preferential-quizes__content-text">$9.60 per shipment. Includes free
+                                        priority shipping.</p>
+                                </span>
+                            </label>
+                            <label class="preferential-quizes-form__label">
+                                <input class="preferential-quizes-form__input visually-hidden" type="radio"
+                                    name="radio1">
+                                <span>
+                                    <h3 class="preferential-quizes__content-heading">Every month</h3>
+                                    <p class="preferential-quizes__content-text">$12.00 per shipment. Includes free
+                                        priority shipping.</p>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="order-summary">
+                            <div class="definition-list">
+                                <div class="order-definition-term">Order Summary</div>
+                                <div class="order-definition">
+                                    “I drink my coffee as <span class="selected-option">Filter</span> , with a <span
+                                        class="selected-option">Decaf</span> type of bean. <span
+                                        class="selected-option">250g</span> ground ala <span
+                                        class="selected-option">Cafetiére</span> , sent to me <span
+                                        class="selected-option">Every Week</span> .”
+                                </div>
+                            </div>
+                            <a class="button button-green button-summary" href="#">Create me plan</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <a class="logo-link logo-link-outline" href="#">
+                <img class="logo-img" src="./img/footer-logo.svg" alt="coffeeroasters" width="236" height="26">
+            </a>
+
+            <!-- SITENAV -->
+            <ul class="sitenav__list footer__list">
+                <li class="sitenav__item">
+                    <a class="sitenav__link footer__link" href="#">HOME<a>
+                </li>
+                <li class="sitenav__item">
+                    <a class="sitenav__link footer__link" href="#">ABOUT US</a>
+                </li>
+                <li class="sitenav__item">
+                    <a class="sitenav__link footer__link" href="#">Create your plan</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social-list">
+                <li class="footer__social-items">
+                    <a class="footer__social-networks-link" href="https://www.facebook.com/" target="_blank">
+                        <img class="footer__social-networks-img" src="./img/facebock.svg" alt="facebook" width="24"
+                            height="24">
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer__social-list">
+                <li class="footer__social-items">
+                    <a class="footer__social-networks-link" href="https://www.twiter.com/tursunov_doniyorbek_0930/"
+                        target="_blank">
+                        <img class="footer__social-networks-img" src="./img/twitter.svg" alt="twiter" width="24"
+                            height="24">
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer__social-list">
+                <li class="footer__social-items">
+                    <a class="footer__social-networks-link" href="https://www.instagram.com" target="_blank">
+                        <img class="footer__social-networks-img" src="./img/instagram.svg" alt="instagram" width="24"
+                            height="24">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

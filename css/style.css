@@ -584,6 +584,244 @@ img{
 }
 
 
+/* HERO */
+.hero__create--page {
+    background-image: url(../img/create-hero-bg.png);
+}
+
+/* HOW-IT-WORKS */
+.how-it-works__container {
+    background-image: url(../img/bitmap-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.how-it-works__inner-create-page {
+    padding-top: 9.1rem;
+    padding-bottom: 10.7rem;
+}
+
+.how-it-works__step-h3 {
+    color: var(--text-color);
+}
+
+.how-it-works__step-p {
+    color: var(--text-color);
+}
+
+.how-it-works__item::before {
+    background-color: transparent;
+}
+
+
+/* MENU */
+.menu-wrapper{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--light-bg);
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    padding-right: 144px;
+    margin-top: 20px;
+}
+
+.menu-piccollo-img{
+    position: absolute;
+    z-index: 1;
+    top: 176px;
+    left: 1256px;
+}
+
+.menu-leaf-img{
+    position: absolute;
+    z-index: 0;
+    top: 276px;
+    left: 1265px;
+}
+
+.menu-img{
+    position: absolute;
+    transform: rotate(-22deg);
+    top: 714px;
+    right: 1235px;
+}
+
+.menu-planato-img{
+    position: absolute;
+    top: 1465px;
+    right: 1330px;
+    transform: rotate(-7deg);
+}
+
+.menu-types-wrapper {
+    position: relative;
+}
+
+.menu-types {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-types::after {
+    position: absolute;
+    width: 255px;
+    height: 1px;
+    left: 0;
+    top: 5.6rem;
+    background: #83888F;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    content: "";
+}
+
+.menu-types-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.menu-types-link:not(:last-child){
+    margin-bottom: 35px;
+}
+
+
+/* PREFERENTIAL-QUIZES */
+.preferential-quizes__top {
+    width: 100%;
+    max-width: 730px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5.6rem;
+}
+
+.preferential-quizes__heading {
+    color: var(--grey);
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.drop-down {
+    display: inline-block;
+    background-color: transparent;
+    margin: 0;
+    border: 0;
+}
+
+.drop-down__img {
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    object-fit: cover;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.preferential-quizes__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 60px;
+    list-style: none;
+}
+
+.preferential-quizes-form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 660px;
+}
+
+.preferential-quizes-form__input:checked ~ span {
+    background-color: #0E8784;
+    color: #fff;
+}
+
+.preferential-quizes-form__label {
+    min-width: 208px;
+    min-height: 220px;
+}
+
+.preferential-quizes-form__label span {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-left: 18px;
+    background-color:#F4F1EB;;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 12px;
+    padding-left: 16px;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.preferential-quizes__content-heading {
+    margin-top: 0;
+    margin-bottom: 2.4rem;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 1.33;
+}
+
+.preferential-quizes__content-text {
+    margin: 0;
+}
+
+.preferential-quizes-js {
+    display: none;
+}
+
+.order-summary {
+    text-align: right;
+}
+
+.definition-list {
+    background-color: #2C343E;
+    padding: 2.7rem 6.4rem;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.order-definition-term {
+    color: #fff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.order-definition {
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.67;
+    color: #fff;
+}
+
+.selected-option {
+    color: #0E8784;
+}
+
+
 
 
 
@@ -606,6 +844,10 @@ only screen and (                min-resolution: 2dppx) {
 
     .site-footer-wrapper {
         background-image: url(../img/footer-bg@2x.png);
+    }
+
+    .hero__create--page {
+        background-image: url(../img/create-hero-bg@2x.png);
     }
 
 }
